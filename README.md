@@ -157,7 +157,7 @@ today. Limited spots available, act now!
 
 
 
-**Example 3 — vague "no skills needed" listing**
+**Example 2 — vague "no skills needed" listing**
 ```
 Amazing opportunity to make money fast from your phone. No skills or
 experience required. Just pay a small registration fee to get started
@@ -166,7 +166,7 @@ and begin earning thousands within your first week.
 
 ### Likely to be flagged as LEGITIMATE
 
-**Example 4 — standard tech job posting**
+**Example 3 — standard tech job posting**
 ```
 We are seeking a Software Engineer with 3+ years of experience in
 Python and cloud infrastructure. Responsibilities include designing
@@ -175,7 +175,7 @@ participating in code reviews. Bachelor's degree in Computer Science
 or related field required. Competitive salary and benefits package.
 ```
 
-**Example 5 — standard finance role**
+**Example 4 — standard finance role**
 ```
 Our accounting department is looking for a Financial Analyst to
 support quarterly reporting and budget forecasting. The ideal
