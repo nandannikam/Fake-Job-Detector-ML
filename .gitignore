@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data (too large / not ours to redistribute -- link to Kaggle in README instead)
+data/*.csv
+
+# Trained model artifacts (regenerate via train.py)
+models/*.pkl
+models/*.png
+
+# Logs
+logs/
+
+# OS / editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Pytest cache
+.pytest_cache/
