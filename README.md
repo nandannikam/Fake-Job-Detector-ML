@@ -6,31 +6,31 @@
 
 ## Overview
 
-Job scams are around these days and fresh graduates often fall for them because they haven't seen enough real job postings to spot the red flags. That’s why I decided to build a tool that actually helps with this problem. You paste in a job description and it tells you whether it looks real or fake along, with how sure it is.
+The issue of job scams is common in the modern world, and inexperienced workers are especially vulnerable since they have little knowledge of typical job offers and may be unable to differentiate real job listings from scams. To address this issue, I have designed and implemented an application that determines whether a particular job posting is a scam or legitimate. The program takes a text of the job offer, cleans and tokenizes the data, assigns weights to terms based on the TF-IDF algorithm, and utilizes a classification model trained on 18000 real and fake job advertisements.
 
-Behind the scenes it’s not complicated. The text gets cleaned up turned into TF-IDF features and then fed into a Logistic Regression model that was trained on 18,000 labeled job ads. Half real half fake. It runs through a terminal interface so anyone can use it. No deep learning here no -trained models. This was made for an AI and ML fundamentals course. The point was to understand each step not just push buttons.
+The model employs a Logistic Regression algorithm and is trained on a dataset comprising 18000 entries, half of which are real job listings and half are scams. The application is relatively simple to use as it only requires inputting the job advertisement text and pressing the Enter key. The results are displayed right after the calculation is completed. The code itself does not require heavy computations or advanced algorithms – instead, it is written in Python and uses the scikit-learn library. The project was created for an AI and ML fundamentals course as an exercise to learn the basics of the language and the principles of machine learning modeling.
 
 ## Features
 
-- Cleans and preprocesses job posting text by removing unnecessary noise and stripping out common stopwords
+- Cleans and preprocesses job ad text by filtering out noise and stopwords
 
-- Turns the cleaned text into TF-IDF features using both unigrams and bigrams to capture more context
+- Converts the preprocessed text into TF-IDF features using unigrams and bigrams
 
-- Trains a Logistic Regression model with class balancing to deal with the datasets strong imbalance favoring real postings
+- Trains the Logistic Regression algorithm with class balancing to handle the dataset imbalance
 
-- After training reports accuracy, precision, recall and F1-score to measure how well the model performs
+- Evaluates the performance of the trained model by calculating accuracy, precision, recall and F1-score
 
-- Saves a confusion matrix as an image so you can quickly see where predictions go wrong
+- Saves the confusion matrix as an image for easy visual inspection
 
-- Displays the top words and phrases that the model uses most for each class making the decisions easier to understand
+- Identifies and displays the most common words and phrases used in the model for each class
 
-- Stores the trained model and the vectorizer together so we don’t need to retrain every time we run the system
+- Saves the trained model and vectorizer object for future use
 
-- Provides a command-line interface where you can paste any job posting and get an instant prediction
+- Creates a command-line interface for the user to paste job ad and receive prediction
 
-- Logs every training session and prediction result to a file, for tracking and debugging
+- Stores training logs and prediction results in a file for later review and debugging
 
-- Includes unit tests that check the text-cleaning steps and make sure the model and vectorizer save and load correctly
+- Has unit tests that verify the text preprocessing steps and check if the model and vectorizer can be loaded properly
 
 ## Technologies / Tools Used
 
